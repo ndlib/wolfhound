@@ -1,15 +1,15 @@
 # Document Type: Program
 # Is this just for commencements? Build for future collaborations and other programs? Could include fields such as "event," "location," etc. if building for programs besides commencements.
 
-dc:contributor#Speaker:
+dc:contributor:
     definition: "This property defines the speaker(s) at an event." #Is this the "hint" text?
     usage_note: "Multiple instances are required when present."
     predicate: "http://dublincore.org/2012/06/14/dcelements#contributor" #should we maintain a list of possible "Creator" and "Contributor" roles in locabulary?
     sample_value: "Sorin, Edward"
     range:
        uri: "rdfs:Literal"
-    validations: # Should speaker be a required field? Curate is relaxed re: metadata, so maybe this schema should be too?
-       cardinality: 1..n
+    validations: # Optional
+       cardinality: 0..n
    facet:
        faceted: false
     search:
@@ -18,7 +18,7 @@ dc:contributor#Speaker:
           -all_fields
     display:
        display_label: "Speaker"
- #      display_group:
+ #      display_group: #I think LaRita knows?
  #         - title
  #         - type
  #         - search_results
