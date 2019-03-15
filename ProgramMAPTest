@@ -18,11 +18,8 @@ dc:contributor:
           -all_fields
     display:
        display_label: "Speaker"
- #      display_group: #I think LaRita knows?
- #         - title
- #         - type
- #         - search_results
- #         - object
- #         - collection
+       display_group: #I think LaRita knows?
+          - search_results
+          - object
        display_order: #N/A
        display_suppressed: false
